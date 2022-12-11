@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的第一个网页</title>
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        background-color: rgb(243, 241, 234);
+        overflow: auto;
+      }
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      
+      .flex1 {
+        flex: 1;
+      }
+      p {
+        font: 14px 宋体;
+        border: none;
+      }
+      .flexcenter{
+        justify-content: center;
+      }
+      .aligncenter{
+        align-items: center;
+      }
+      .flexevenly{
+        justify-content: space-evenly;
+      }
+      .p1{
+        font: 14px 宋体;
+        border: none;
+        text-align: center;
+      }
+      h1 {
+        font: bold 30px 黑体;
+        color: crimson;
+        text-align: center;
+        border: none;
+      }
+      h2 {
+        font: bold 20px 黑体;
+        color: rgb(41, 15, 20);
+        text-align: center;
+        border: none;
+      }
+      .img{
+        height: 50px;
+      }
+      /* * {
+        border: 1px solid rgb(223, 23, 23);
+      } */
+      .height {
+        height: 120px;
+      }
+      table{
+        width: 100%;
+      }
+      .td{
+        width: 50px;
+        text-align: center;
+      }
+      .tdm{
+        width: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="column">
+    <!-- 第一层1 -->
+    <div style="height:auto;background-color:rgb(118, 15, 177);" class="flex1">
+      <p>
+        <b>鸣谢：</b><br>在此感谢康老师，老师的课程很优秀，以正确的方式带我走进编程的世界
+      </p>
+    </div>
+    <!-- 第一层2 -->
+    <div style="height: auto" class="flex">
+      <div style="width: 300px;height: auto;" class="flex flexcenter aligncenter">
+        <img src="图片文件/猫.jpg" height="80px" class="flexcenter">
+      </div>
+      <div style="height: auto" class="column flex1">
+        <h1>我的第一个网站</h1>
+        <p style="color: rgb(61, 241, 37); font: 20px 黑体; text-align: right">
+          原神攻略
+        </p>
+      </div>
+    </div>
+    
+    
+    <!-- 第一层 3-->
+    <div style="height: auto" class="flex flexcenter">
+      <!-- 第二层左区 -->
+      <div class="column">
+        <!-- 左区标题栏 -->
+        <h1 class="h1">常用链接</h1>
+        <!-- 左区内容区-->
+        <!-- <div class="flex img flexcenter"><img src="图片文件/草神.jpg" alt="草神">
+        <a href=https://www.miyoushe.com/ys/article/31109979>草神攻略</a>
+        </div>
+        <div class="flex img"><img src="图片文件/一斗.png" alt="一斗"></div> -->
+        <a href="http://119.6.107.149:8788/RMD/Common/jsp/index/index.jsp">在线监测系统</a><br>
+        <p>登录账号：  <br>登录密码:</p>
+        <a href="http://ipl.chengdurail.com:7001/">公司统一门户地址</a><br>
+        <p>登录账号：  <br>登录密码:</p>
+        <a href="http://njkangnijt.3322.org:8081/simple_view/index3.htm">车门在线监测</a><br>
+        <p>登录账号：  <br>登录密码:</p>
+        <a href="https://webstatic.mihoyo.com/ys/app/interactive-map/index.html?lang=zh-cn#/map/2?shown_types=">
+          提瓦特大地图
+        </a>
+        
+
+      </div>
+      <!-- 第二层2 -->
+      <div class="flex1 column">
+        <!-- 右区标题栏 -->
+        <div class="flex flexcenter">
+          <h2 class="h2">通用攻略</h2>
+          <img src="图片文件/派蒙.jpg" class="img">
+        </div>
+        <!-- 右区内容区 -->
+        <div class="column">
+          <!-- 表格1 突破及天赋-->
+          <div class="flex flex1">
+            <table border="1">
+              <!-- 表头 -->
+              <tr>
+                <td rowspan="2" class="td">突破和天赋</td>
+                <td>天赋书更新时间</td>
+                <td>天赋等级6</td>
+                <td>天赋等级9</td>
+                <td>80级突破</td>
+              </tr>
+              <!-- 内容 -->
+              <tr>
+                <td>（一）周一.四.日：<br>
+                <b>繁荣的指引：</b>刻晴，凝光，七七，魈。<br>
+                <b>自由的指引：</b>芭芭拉，砂糖，安柏，可莉，辛炎，公子，迪奥娜。<br>
+                （二）周二.五.日：<br>
+                <b>勤劳的指引：</b>香菱，重云，胡桃，甘雨。<br>
+                <b>抗争的指引：</b>雷泽，琴，班尼特，诺艾尔，莫娜，迪卢克，优菈。<br>
+                （三）周三.六.日：<br>
+                <b>黄金的指引：</b>北斗，行秋，钟离，烟绯。<br>
+                <b>诗文的指引：</b>温迪，凯亚，菲谢尔，丽莎，阿贝多，罗莎莉亚。
+              </td>
+                
+                <td>1、<b>天赋书：</b>3本两级书，21本三级书。<br>
+                  2、<b>怪物材料：</b> 6个1级材料，22个2级材料。<br>
+                  3、<b>摩拉：</b>
+                
+                </td>
+                <td>1、<b>天赋书：</b>3本两级书，21本三级书，22本四级书。<br>
+                  2、<b>怪物材料：</b> 6个1级材料，22个2级材料，19个3级材料，4个周本材料。<br>
+                  3、<b>摩拉：</b></td>
+                <td>1、<b>BOSS材料：</b> <br>
+                  2、<b>经验书：</b> <br>
+                  3、<b>摩拉：</b><br>
+                  4、<b>特产：</b>
+                </td>
+
+              </tr>
+  
+            </table>
+          </div>
+          <!-- 表格2 角色攻略-->
+          <div class="flex flex1">
+            <table border="1">
+              <!-- 表头 -->
+              <tr>
+                <td rowspan="3" class="td">角色攻略</td>
+                <td>角色头像</td>
+                <td>角色名字</td>
+                <td>角色攻略</td>
+                <td>天赋书</td>
+                <td>天赋材料</td>
+              </tr>
+              <!-- 内容 -->
+              <tr>
+                <td><img src="图片文件/草神.jpg" alt="草神" class="img">
+              </td>
+                
+                <td>草神
+                </td>
+                <td><a href="https://www.miyoushe.com/ys/article/31081083">草神攻略</a>
+                </td>
+                <td>巧思的教导系列
+                </td>
+                <td>散兵、蕈兽孢子、荧光孢粉、孢囊晶尘
+                </td>
+
+              </tr>
+              <tr>
+                <td><img src="图片文件/一斗.png" alt="草神" class="img">
+              </td>
+                
+                <td>荒泷一斗
+                </td>
+                <td><a href="https://www.miyoushe.com/ys/article/31081083">一斗攻略</a>
+                </td>
+                <td>巧思的教导系列
+                </td>
+                <td>散兵、蕈兽孢子、荧光孢粉、孢囊晶尘
+                </td>
+
+              </tr>
+  
+            </table>
+          </div>
+
+          <!-- 表格3 特产及采集路线-->
+          <div class="flex flex1">
+            <table border="1">
+              <!-- 表头 -->
+              <tr>
+
+                <td rowspan="2" class="td">特产及采集路线</td>
+              <!-- 内容 -->
+                <td class="tdm">琉璃百合</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+               
+                <td class="tdm">蒲公英</td>
+                <td><a href="https://www.bilibili.com/video/BV1Pf4y1C7XD/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+                <a href="https://www.gamersky.com/handbook/202106/1395288.shtml">图片路线</a></td>
+                
+                <td class="tdm">琉璃百合</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+               
+              </tr>
+
+              <tr>
+                
+                <td class="tdm">琉璃百合</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+               
+                <td class="tdm">蒲公英</td>
+                <td><a href="https://www.bilibili.com/video/BV1Pf4y1C7XD/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+                <a href="https://www.gamersky.com/handbook/202106/1395288.shtml">图片路线</a></td>
+                
+                <td class="tdm">琉璃百合</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+                
+              </tr>
+  
+            </table>
+          </div>
+
+          <!-- 表格4 怪物材料路线-->
+          <div class="flex flex1">
+            <table border="1">
+              <!-- 表头 -->
+              <tr>
+
+                <td rowspan="2" class="td">怪物材料路线</td>
+                <!-- 内容 -->
+                <td class="tdm">箭簇</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+                <td class="tdm">丘丘人面具</td>
+                <td><a href="https://www.bilibili.com/video/BV1Pf4y1C7XD/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202106/1395288.shtml">图片路线</a></td>
+                <td class="tdm">愚人众徽章</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+
+              </tr>
+
+              <tr>
+
+                <td class="tdm">箭簇</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+                <td class="tdm">丘丘人面具</td>
+                <td><a href="https://www.bilibili.com/video/BV1Pf4y1C7XD/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202106/1395288.shtml">图片路线</a></td>
+                <td class="tdm">愚人众徽章</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+
+              </tr>
+  
+            </table>
+          </div>
+
+          <!-- 表格5 神瞳及流明石等路线-->
+          <div class="flex flex1">
+            <table border="1">
+              <!-- 表头 -->
+              <tr>
+                <td rowspan="2" class="td">神瞳及流明石等路线</td>
+                <td class="tdm">风神瞳</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+                <td class="tdm">岩神瞳</td>
+                <td><a href="https://www.bilibili.com/video/BV1Pf4y1C7XD/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202106/1395288.shtml">图片路线</a></td>
+                <td class="tdm">雷神瞳</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+              </tr>
+
+              <tr>
+                <td class="tdm">草神瞳</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+                <td class="tdm">流明石</td>
+                <td><a href="https://www.bilibili.com/video/BV1Pf4y1C7XD/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202106/1395288.shtml">图片路线</a></td>
+                <td class="tdm">键纹</td>
+                <td><a href="https://www.bilibili.com/video/BV18V4y1x7Kk/?spm_id_from=333.337.search-card.all.click&vd_source=399c1a3a84274bd0059c1843aab21f02">B站视频采集路线</a><br>
+
+                <a href="https://www.gamersky.com/handbook/202105/1385084.shtml">图片路线</a></td>
+
+              </tr>
+  
+            </table>
+          </div>
+
+        </div>
+        
+       
+
+      </div>
+
+    </div>
+    <!-- 第一层4 -->
+    <div style="height: 60px;margin-bottom:10px;margin-top: 100px;">
+        <p class="p1">版权所有</p>
+    </div>
+  </body>
+</html>
